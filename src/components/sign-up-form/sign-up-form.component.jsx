@@ -9,6 +9,7 @@ import './sign-up-form.styles.scss'
 
 import Button from '../button/button.component'
 
+
 // declare a default object called 'defaultFormFields' with properties 'displayName', 'email', 'password', and 'confirmPassword'
 const defaultFormFields = {
     displayName: '',
