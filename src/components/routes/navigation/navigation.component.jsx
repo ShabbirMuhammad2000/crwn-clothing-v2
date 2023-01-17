@@ -11,7 +11,7 @@ import CartDropdown from '../../cart-dropdown/cart-dropdown.component';
 import { ReactComponent as CrwnLogo} from '../../../assests/crown.svg'
 import { signOutUser } from '../../../utils/firebase/firebase.utils'
 import './navigation.styles.scss';
-
+  
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
   const {isCartOpen} = useContext(CartContext)
