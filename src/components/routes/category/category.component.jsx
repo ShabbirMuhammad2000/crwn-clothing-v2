@@ -9,15 +9,14 @@ import { CategoryContainer, Title } from './category.styles'
 
 import { selectCategoriesMap } from '../../../store/categories/category.selector'
 
+
 const Category = () => {
   const { category } = useParams();
-  console.log('render/re-rendering category componenet')
-  const categoriesMap = useSelector(selectCategoriesMap)
+  const categoriesMap = useSelector(selectCategoriesMap);
   const [products, setProducts] = useState(categoriesMap[category]);
 
-
   useEffect(() => {
-    console.log('effect fired calling setProducts')
+   
     setProducts(categoriesMap[category]);
   }, [category, categoriesMap]);
 
@@ -33,4 +32,5 @@ const Category = () => {
     </Fragment>
   );
 };
-export default Category  
+
+export default Category;
