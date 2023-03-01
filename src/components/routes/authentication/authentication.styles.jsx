@@ -8,7 +8,6 @@ export const AuthenticationContainer = styled.div`
 `;
 
 
-
 // .authentication-container {
 //     display: flex;
 //     width: 900px;
